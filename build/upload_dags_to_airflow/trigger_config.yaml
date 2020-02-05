@@ -1,0 +1,10 @@
+name: upload-dags-to-airflow
+github:
+  owner: [owner]
+  name: [name]
+  push:
+    branch: "^master$"
+substitutions:
+  _PROJECT_ID: [project_name]
+  _COMPOSER_ENV: [environment_name]
+filename: "build/upload_dags_to_airflow/cloudbuild.yaml"

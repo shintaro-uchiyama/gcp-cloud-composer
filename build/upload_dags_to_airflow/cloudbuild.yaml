@@ -1,0 +1,5 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['composer', 'environments', 'storage', 'dags', 'import',
+           '--location', 'asia-northeast1', '--project', '${_PROJECT_ID}', '--environment', '${_COMPOSER_ENV}',
+           '--source', './composer/dags/sample']

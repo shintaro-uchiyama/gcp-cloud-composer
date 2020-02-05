@@ -1,0 +1,9 @@
+google-api-python-client==1.7.11
+google-cloud-bigquery==1.22.0
+google-cloud-core==1.0.3
+google-cloud-storage==1.23.0
+google-cloud-logging==1.14.0
+slackweb==1.0.5
+timeout-decorator==0.4.1
+google-auth==1.10.0
+requests
