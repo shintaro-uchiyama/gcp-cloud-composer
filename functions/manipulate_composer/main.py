@@ -19,7 +19,7 @@ def manipulate_composer(event, context):
 
 
 def _create_polling_instance(manipulate_type):
-    compute = googleapiclient.discovery.build('compute', 'v1')
+    compute = googleapiclient.discovery.build('compute', 'v1', cache_discovery=False)
     image_response = compute.images().getFromFamily(
         project='cos-cloud', family='cos-stable').execute()
 
