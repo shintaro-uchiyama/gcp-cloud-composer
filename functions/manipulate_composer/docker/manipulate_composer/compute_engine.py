@@ -3,7 +3,7 @@ from .env import PROJECT_ID, ZONE, POLLING_INSTANCE_NAME
 
 
 def delete_polling_instance():
-    compute = googleapiclient.discovery.build('compute', 'v1')
+    compute = googleapiclient.discovery.build('compute', 'v1', cache_discovery=False)
     result = compute.instances().list(project=PROJECT_ID, zone=ZONE).execute()
     instance_id = ''
     for instance in result['items']:
